@@ -3,14 +3,28 @@
 import { useState } from "react";
 
 const gifts = [
-  { id: 9, name: "Primeira Fatia do Bolo", price: 500, emoji: "🍰" },
+  { id: 1, name: "Primeira Fatia do Bolo", price: 500, emoji: "🍰" },
   { id: 2, name: "Contribuição Lua de Mel", price: 300, emoji: "✈️" },
-  { id: 11, name: "Aula de Dança pro Noivo", price: 120, emoji: "🕺" },
-  { id: 13, name: "Massagem pra Noiva não surtar", price: 100, emoji: "💆‍♀️" },
-  { id: 10, name: "Buquê da Noiva", price: 800, emoji: "💐" },
-  { id: 12, name: "Vaquinha pro Nintendo Switch 2", price: 50, emoji: "🎮" },
-  { id: 14, name: "Curso de Paciência pro Noivo", price: 99, emoji: "🧘" },
-  { id: 15, name: "Pizza de Domingo à noite", price: 70, emoji: "🍕" },
+  { id: 3, name: "Aula de Dança pro Noivo", price: 120, emoji: "🕺" },
+  { id: 4, name: "Massagem pra Noiva não surtar", price: 110, emoji: "💆‍♀️" },
+  { id: 5, name: "Buquê da Noiva", price: 800, emoji: "💐" },
+  { id: 6, name: "Vaquinha pro Nintendo Switch 2", price: 150, emoji: "🎮" },
+  { id: 7, name: "Curso de Paciência pro Noivo", price: 99, emoji: "🧘" },
+  { id: 8, name: "Pizza de Domingo à noite", price: 70, emoji: "🍕" },
+  { id: 9, name: "Academia pós Lua de Mel", price: 200, emoji: "🏋️‍♂️" },
+  { id: 10, name: "Ração pro Luke", price: 100, emoji: "🐶" },
+  {
+    id: 11,
+    name: "Coletor de Fios de Cabelo da Noiva",
+    price: 85,
+    emoji: "🧹",
+  },
+  {
+    id: 12,
+    name: "Bebê Reborn para os Pais dos Noivos",
+    price: 180,
+    emoji: "👶",
+  },
 ];
 
 export default function Home() {
@@ -130,13 +144,13 @@ export default function Home() {
                   Até 01/11/2026
                 </p>
                 <p className="text-stone-500 mt-1">Convites em breve</p>
-                <a
+                {/* <a
                   href="https://wa.me/5553981350450?text=Ol%C3%A1%2C%20gostaria%20de%20confirmar%20minha%20presen%C3%A7a%20no%20casamento%21"
                   target="_blank"
                   className="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-[#556b2f] border-b border-[#556b2f] pb-1 hover:text-[#3a4a20] hover:border-[#3a4a20] transition-colors"
                 >
                   Confirmar
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -237,7 +251,7 @@ export default function Home() {
                 <img
                   src={`https://api.qrserver.com/v1/create-qr-code/?size=250x250&color=292524&bgcolor=ffffff&data=${encodeURIComponent(pixPayload)}`} // Placeholder payload
                   alt="QR Code Pix"
-                  className="w-full max-w-[200px] h-auto mx-auto mix-blend-multiply opacity-90 group-hover:opacity-100 transition-opacity"
+                  className="w-full max-w-200 h-auto mx-auto mix-blend-multiply opacity-90 group-hover:opacity-100 transition-opacity"
                 />
               </div>
 
