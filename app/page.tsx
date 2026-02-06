@@ -249,7 +249,7 @@ export default function Home() {
                   In production, you would generate a real EMV BR Code payload containing the specific amount.
                 */}
                 <img
-                  src={`https://api.qrserver.com/v1/create-qr-code/?size=250x250&color=292524&bgcolor=ffffff&data=${encodeURIComponent(pixPayload)}`} // Placeholder payload
+                  src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&color=292524&bgcolor=ffffff&data=${encodeURIComponent(pixPayload)}`} // Placeholder payload
                   alt="QR Code Pix"
                   className="w-full max-w-200 h-auto mx-auto mix-blend-multiply opacity-90 group-hover:opacity-100 transition-opacity"
                 />
