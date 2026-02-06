@@ -168,7 +168,7 @@ export default function Home() {
               <button
                 key={gift.id}
                 onClick={() => setSelectedGift(gift)}
-                className="flex flex-col items-center p-8 bg-white rounded-xl shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 border border-[#e6e8e3] group"
+                className="flex flex-col items-center p-8 bg-white rounded-xl shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 border border-[#e6e8e3] group cursor-pointer"
               >
                 <div className="text-5xl mb-6 bg-[#f7f7f5] w-20 h-20 flex items-center justify-center rounded-full group-hover:bg-[#556b2f]/10 group-hover:scale-110 transition-all duration-300">
                   {gift.emoji}
