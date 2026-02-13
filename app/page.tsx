@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const gifts = [
   { id: 1, name: "Primeira Fatia do Bolo", price: 500, emoji: "🍰" },
@@ -44,7 +45,14 @@ export default function Home() {
       {/* Hero Banner */}
       <section className="relative h-[80vh] w-full flex flex-col items-center justify-center bg-[#2a3618] text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
-          {/* Placeholder for noise/texture or image */}
+          <Image
+            src="/hero_banner.jpeg"
+            alt="Banner do Casamento Kauane & Maicon"
+            fill
+            className="object-cover"
+            objectPosition="center 90%"
+            priority
+          />
           <div className="absolute inset-0 bg-[#2a3618]/50 z-10" />
         </div>
 
